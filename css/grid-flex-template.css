@@ -1,0 +1,101 @@
+
+.container { 
+    position: relative; 
+    display: grid;
+    grid-template-columns: 0.3fr 1.7fr;
+    grid-template-rows: 0.4fr 2.2fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Header Header"
+    "Left Content"
+    "Footer Footer";
+}
+.Header { 
+    grid-area: Header; 
+    border: 1px solid blueviolet;
+}
+.Left { 
+    grid-area: Left;
+    border: 1px solid blueviolet; 
+}
+.Content { 
+    grid-area: Content; 
+    border: 1px solid blueviolet;
+}
+.Footer { 
+    grid-area: Footer; 
+    border: 1px solid blueviolet;
+}
+
+/* Flex system */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+.nav-item {
+    margin: 0 10px 0 0;
+    background-color: aquamarine;
+}
+
+/* Positioning elements */
+
+.style-position {
+    position: absolute;
+    top: 15%;
+    font-size: 50px;
+    color: red;
+}
+.position-btn {
+    position: absolute;
+    bottom: 120px;
+    right: 50px;
+}
+a {
+    text-decoration: none;
+}
+
+/* z-index is used for layers: than bigger number, that layer is on the top of previous element*/
+.z-container {
+    position: relative;
+}
+.block-1 {
+    position: relative;
+    background-color: bisque;
+    z-index: 1;
+    border: 1px solid black;
+    height: 150px;
+    margin: 30px;
+}
+.block-2 {
+    position: absolute;
+    z-index: 2;
+    left: 400px;
+    top: 20px;
+    width: 20%;
+    height: 50px;
+    background-color: chartreuse;
+}
+.block-3 {
+    position: absolute;
+    z-index: 3;
+    left: 300px;
+    top: 10px;
+    width: 20%;
+    height: 50px;
+    background-color: cyan;
+}
+
+/* Overflow */
+.overflow-style {
+    height: 100px;
+    overflow: scroll;
+}

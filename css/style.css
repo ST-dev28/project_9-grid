@@ -1,0 +1,18 @@
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.parent-grid {
+    display: grid;
+}
+.child {
+    border: 1px solid blueviolet;
+    margin: 5px;
+}
+.parent-grid-rows {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
